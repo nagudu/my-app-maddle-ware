@@ -37,16 +37,8 @@ app.get('/', (req, res) => res.send('Hello my World'));
 
 require('./routes/user.js')(app);
 require('./routes/policyClass.js')(app);
-<<<<<<< HEAD
-require("./routes/contact")(app);
-require("./routes/feedback")(app);
-require("./routes/appointment_details")(app);
-require("./routes/messge_send")(app);
-
-=======
 require('./routes/feedback')(app);
 require('./routes/new_inmate_reg')(app);
->>>>>>> 9b227ee11f22d0e34a848503e2cea06b455cbe6f
 
 //create a server
 var server = app.listen(port, function () {
